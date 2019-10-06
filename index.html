@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EDIYA COFFEE</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="css/ediya.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="js/ediya.js"></script>
+</head>
+<body>        
+    <header>
+        <div class="title"><h1>EDIYA COFFEE</h1></div> 
+        <!-- 모바일환경에서만 보이는 메뉴버튼 -->
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu" class="btn-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <b class="blind">메뉴</b>
+        </label> 
+
+        <!-- 네비게이션 -->
+        <nav>
+            <!-- 검색 -->
+            <form action="#">
+                <label for="search" class="blind">통합검색</label>
+                <input type="text" id="search">
+                <button><span class="blind">검색</span></button>
+            </form>
+            <!-- 메뉴 -->
+            <ul class="gnb">
+                <!-- 1depth -->
+                <li>
+                    <a href="#">MENU<i class="fa fa-arrow"></i></a>
+                    <!-- 2depth -->
+                    <ul>
+                        <li><a href="#">음료</a></li>
+                        <li><a href="#">베이커리</a></li>
+                        <li><a href="#">MD</a></li>
+                        <li><a href="#">원두</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">EDIYA MEMBERS</a>
+                    <ul>
+                        <li><a href="#">멤버스 소개</a></li>
+                        <li><a href="#">2019 리워드</a></li>
+                        <li><a href="#">이디야카드</a></li>
+                        <li><a href="#">선물하기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">STORE</a>
+                    <ul>
+                        <li><a href="#">매장찾기</a></li>
+                        <li><a href="#">칭찬매장</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">NOTICE</a>
+                    <ul>
+                        <li><a href="#">이디야 소식</a></li>
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">마감된 이벤트</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- 기타메뉴 -->
+            <ul class="util-nav">
+                <li><a href="#">Sign in</a></li>
+                <li><a href="#">My Ediya</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Find a Store</a></li>
+            </ul>        
+        </nav>
+
+        <!-- 멤버쉽 메뉴 -->
+        <input type="checkbox" id="btn-member">
+        <label for="btn-member" class="btn-member">            
+            <b class="blind">멤버쉽메뉴</b>
+        </label>
+        <!-- 멤버쉽 컨텐츠 -->
+        <div class="member row">
+            <!-- 회원가입/로그인 -->
+            <div class="col-sm-6">
+                <div class="wrap row">
+                    <div class="col-xs-3 col-sm-3">
+                        <img src="img/login.png" alt="">
+                    </div>
+                    <div class="col-xs-9 col-sm-9">
+                        <div class="box">
+                            <p>
+                                <strong>이디야커피 회원이 아니세요?</strong>
+                                이디야커피 회원만의 특별한 혜택을 누릴 수 있습니다.
+                            </p>
+                            <div class="btn-group">
+                                <button>로그인</button>
+                                <button>회원가입</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 이디야 카드 -->
+            <div class="col-sm-6">
+                <div class="wrap row">
+                    <div class="col-xs-3 col-sm-3">
+                        <img src="img/card.png" alt="">
+                    </div>
+                    <div class="col-xs-9 col-sm-9">
+                        <div class="box">
+                            <p>
+                                <strong>이디야카드를 가지고 계신가요?</strong>
+                                이디야카드를 등록하시면, 이디야멤버스만의 특별한 혜택을 누릴 수 있습니다.
+                            </p>
+                            <div class="btn-group">
+                                <button>카드등록</button>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <!-- 신제품 광고 -->
+        <article class="main-ad">
+            <h2 class="blind">메인슬라이드</h2>
+            <div class="slide1 swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="img/main_slide1.jpg" alt="베트남 스타일의 달콤한 연유커피를 이디야커피에서 즐겨보세요!">
+                            <img src="img/m_slide_1.jpg" alt="베트남 스타일의 달콤한 연유커피를 이디야커피에서 즐겨보세요!">
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="img/main_slide2.jpg" alt="농협카드 1만원 이상 결제 시 2000원 캐시백">
+                            <img src="img/m_slide_2.jpg" alt="농협카드 1만원 이상 결제 시 2000원 캐시백">
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="img/main_slide3.jpg" alt="내맘대로 골라먹는 이디야 브레드 3종">
+                            <img src="img/m_slide_3.jpg" alt="내맘대로 골라먹는 이디야 브레드 3종">
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+            </div>
+        </article>
+
+        <!-- 제품소개 -->
+        <article class="product">
+            <h2 class="blind">제품소개</h2>
+            <!-- 제품정보 -->
+            <div class="product-info">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="img-box">
+                            <img src="img/fav_prod_txt01.png" alt="pick your favorite">
+                            <img src="img/fav_prod_txt02.png" alt="">
+                        </div>
+                        <a href="#">메뉴보기</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 제품리스트 -->
+            <div class="product-list">
+                <h3>인기 제품</h3>
+                <ul class="row">
+                    <li class="col-xs-6 col-sm-3">
+                        <div class="wrap">
+                            <img src="img/coffee1.jpg" alt="HOT 토피넛 라떼">
+                            <a href="#">
+                                <dl>
+                                    <dt>HOT 토피넛 라떼</dt>
+                                    <dd>HOT Toffee Nut Latte</dd>                                    
+                                </dl>
+                                <i class="fa"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-xs-6 col-sm-3">
+                        <div class="wrap">
+                            <img src="img/coffee2.jpg" alt="버블 흑당 콜드브루">
+                            <a href="#">
+                                <dl>
+                                    <dt>(EX)버블 흑당 콜드브루</dt>
+                                    <dd>Bubble Black Sugar Cold brew</dd>                                   
+                                </dl>
+                                <i class="fa"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-xs-6 col-sm-3">
+                        <div class="wrap">
+                            <img src="img/coffee3.jpg" alt="초코 쿠키쉐이크">
+                            <a href="#">
+                                <dl>
+                                    <dt>초코 쿠키쉐이크</dt>
+                                    <dd>Chocolate Cookie Shake</dd>                                  
+                                </dl>
+                                <i class="fa"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-xs-6 col-sm-3">
+                        <div class="wrap">
+                            <img src="img/coffee4.jpg" alt="플레인 요거트 플랫치노">
+                            <a href="#">
+                                <dl>
+                                    <dt>플레인 요거트 플랫치노</dt>
+                                    <dd>Plain Yogurt Flatccino</dd>
+                                </dl>
+                                <i class="fa"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- 이디야 바로가기 메뉴  -->
+        <article class="short-cut">
+            <h2>이디야 바로가기</h2>
+            <div class="short-cut-wrap">
+                <ul class="row">
+                    <li class="col-xs-6 col-sm-3">
+                        <div class="wrap">
+                            <a href="#"><img src="img/icon_reserve_info1.png" alt="기업사이트 바로가기"></a>
+                        </div>
+                    </li>
+                    <li class="col-xs-6 col-sm-3">
+                        <div class="wrap">
+                            <a href="#"><img src="img/icon_reserve_info2.png" alt="EDIYA 창업안내"></a>
+                        </div>
+                    </li>
+                    <li class="col-xs-6 col-sm-3">
+                        <div class="wrap">
+                            <a href="#"><img src="img/icon_reserve_info3.png" alt="CULTURELAB 시설대관"></a>
+                        </div>
+                    </li>
+                    <li class="col-xs-6 col-sm-3">
+                        <div class="wrap">
+                            <a href="#"><img src="img/icon_reserve_info4.png" alt="2019리워드 바로가기"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <ul class="info">
+            <li>사업자등록번호 : 107-86-16302</li>
+            <li>대표이사 : 문창기</li>
+            <li>TEL : 02)543-6467</li>
+        </ul>
+        <small>&copy; 2019 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED.</small>
+    </footer>
+</body>
+</html>
