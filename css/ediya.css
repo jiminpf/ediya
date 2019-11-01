@@ -153,6 +153,7 @@ form button::after{
   .slide1 .swiper-pagination-bullet.swiper-pagination-bullet-active{
     background: #243C84;
   }
+  .slide1 .swiper-slide .slide_page{display:block;}
 
 /* 제품소개 */
 .product{
