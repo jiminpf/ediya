@@ -7,7 +7,7 @@
 body{font-family: 'Open Sans', sans-serif;}
 a{text-decoration: none; display: inline-block; color:#000;}
 li{list-style: none;}
-img{max-width: 100%;}
+/*img{max-width: 100%;}*/
 label, span{display: inline-block;}
 .blind{font-size: 0; position: absolute; left:-9999px;}
 
